@@ -347,6 +347,79 @@ footer {
     padding: 20px;
 }
 
+/* Wspólny wygląd sekcji kontaktowych */
+.home-contact,
+.employee-page .cta-section,
+.about-contact {
+    background: var(--primary-dark) !important;
+    border-left: 5px solid var(--gold) !important;
+    color: #fff !important;
+}
+
+.home-contact h2,
+.employee-page .cta-section h2,
+.about-contact h2 {
+    color: #fff !important;
+}
+
+.home-contact > p,
+.employee-page .cta-section > p,
+.about-contact > p {
+    color: #e5e8ed !important;
+}
+
+.home-contact .contact-btn,
+.employee-page .cta-section .contact-btn,
+.about-contact .contact-btn {
+    background: var(--gold) !important;
+    color: #fff !important;
+}
+
+.home-contact .contact-btn:hover,
+.employee-page .cta-section .contact-btn:hover,
+.about-contact .contact-btn:hover {
+    background: #fff !important;
+    color: var(--primary-dark) !important;
+}
+
+.home-contact .contact-form label,
+.employee-page .cta-section .contact-form label,
+.about-contact .contact-form label {
+    color: #fff !important;
+}
+
+.home-contact .privacy-consent,
+.employee-page .cta-section .privacy-consent,
+.about-contact .privacy-consent {
+    color: #e5e8ed !important;
+}
+
+.home-contact .privacy-note,
+.employee-page .cta-section .privacy-note,
+.about-contact .privacy-note {
+    color: #cdd2db !important;
+}
+
+.home-contact .privacy-note a,
+.employee-page .cta-section .privacy-note a,
+.about-contact .privacy-note a {
+    color: #fff !important;
+}
+
+.home-contact .form-submit,
+.employee-page .cta-section .form-submit,
+.about-contact .form-submit {
+    background: var(--gold) !important;
+    color: #fff !important;
+}
+
+.home-contact .form-submit:hover,
+.employee-page .cta-section .form-submit:hover,
+.about-contact .form-submit:hover {
+    background: #fff !important;
+    color: var(--primary-dark) !important;
+}
+
 @media (max-width: 900px) {
     .navbar {
         height: 320px;

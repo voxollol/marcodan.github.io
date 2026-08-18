@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wybierz język / Choose language - Carne Group</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1d263b;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+        }
+
+        .lang-container {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-top: 5px solid #b38b36;
+        }
+
+        .logo {
+            max-width: 200px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1d263b;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-lang {
+            display: block;
+            width: 100%;
+            padding: 15px 30px;
+            margin: 10px 0;
+            background-color: #f4f4f4;
+            color: #1d263b;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-lang:hover {
+            background-color: #b38b36;
+            color: white;
+            border-color: #b38b36;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .lang-container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .btn-lang {
+                font-size: 1rem;
+                padding: 13px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-container">
+        <img
+            src="https://uploads.onecompiler.io/44y5fmx2z/1786643445134/images-removebg-preview.png"
+            alt="Carne Group"
+            class="logo"
+        >
+
+        <h1>Wybierz język / Choose language / Оберіть мову</h1>
+
+        <a href="pl.html" class="btn-lang">🇵🇱 Polski</a>
+        <a href="eng.html" class="btn-lang">🇬🇧 English</a>
+        <a href="ua.html" class="btn-lang">🇺🇦 Українська</a>
+    </div>
+
+</body>
+</html>

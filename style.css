@@ -24,6 +24,7 @@ body {
     background: url('https://www.tripsk.pl/wp-content/uploads/2017/02/Panorama-Torunia.jpg') center center/cover no-repeat;
     z-index: -1;
     transition: opacity 0.8s ease-in-out;
+    filter: blur(3px);
 }
 
 body.scrolled .hero-background {
@@ -126,6 +127,49 @@ body.scrolled .logo-img {
     margin-bottom: 40px;
 }
 
+.home-intro {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    padding: 55px 45px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background:
+        linear-gradient(135deg, rgba(29, 38, 59, 0.96), rgba(29, 38, 59, 0.78)),
+        url('https://www.tripsk.pl/wp-content/uploads/2017/02/Panorama-Torunia.jpg') center/cover;
+    box-shadow: 0 12px 30px rgba(29, 38, 59, 0.3);
+    border-bottom: 5px solid var(--gold);
+}
+
+.home-intro::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: -50px;
+    border: 2px solid rgba(179, 139, 54, 0.6);
+    border-radius: 50%;
+}
+
+.home-intro h1 {
+    position: relative;
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.home-intro p {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #f4f4f4;
+}
+
 .employee-page .content {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
@@ -203,6 +247,22 @@ body.scrolled .logo-img {
     border-left-color: var(--primary-dark);
 }
 
+.info-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.heading-image {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(179, 139, 54, 0.35);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
 .cta-section {
     text-align: center;
     background-color: #eee8d8;
@@ -217,10 +277,26 @@ body.scrolled .logo-img {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-btn:hover {
     background-color: var(--gold);
+    color: #fff;
+    transform: scale(1.06);
+    box-shadow: 0 5px 15px rgba(179, 139, 54, 0.4);
+}
+
+.home-contact {
+    max-width: 700px;
+    margin: 50px auto 0;
+    text-align: center;
+    background: linear-gradient(135deg, #eee8d8, #f8f4e9);
+    border-left-color: var(--primary-dark);
+}
+
+.home-contact h2 {
+    color: var(--primary-dark);
 }
 
 .return-section {
@@ -345,5 +421,24 @@ footer {
 
     .intro {
         margin-bottom: 30px;
+    }
+
+    .home-intro {
+        padding: 38px 22px;
+        margin-bottom: 35px;
+    }
+
+    .home-intro p {
+        font-size: 1rem;
+    }
+
+    .heading-image {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px;
+    }
+
+    .info-heading {
+        gap: 10px;
     }
 }

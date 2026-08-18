@@ -244,7 +244,7 @@ body.scrolled .logo-img {
 }
 
 .info-card.highlight {
-    border-left-color: var(--primary-dark);
+    border-left-color: var(--gold);
 }
 
 .info-heading {

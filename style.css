@@ -21,7 +21,7 @@ body {
     position: fixed;
     inset: 0;
     height: 100vh;
-    background: url('https://uploads.onecompiler.io/44y5fmx2z/44y5gkmrn/office.avif') center center/cover no-repeat;
+    background: url('biuro.jpg') center center/cover no-repeat;
     z-index: -1;
     transition: opacity 0.8s ease-in-out;
     filter: blur(3px);

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencja HR | Szablon Korporacyjny</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Twoja<span>Firma</span></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Strona Główna</a></li>
+                <li><a href="#oferty">Oferty Pracy</a></li>
+                <li><a href="#uslugi">Dla Biznesu</a></li>
+                <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+            </ul>
+
+            <div class="language-selector">
+                <button class="language-button" type="button" aria-expanded="false" aria-label="Wybierz język">
+                    <span class="selected-flag">🇵🇱</span>
+                    <span class="language-arrow">⌄</span>
+                </button>
+
+                <div class="language-menu">
+                    <button type="button" data-language="pl">
+                        <span>🇵🇱</span> Polski
+                    </button>
+                    <button type="button" data-language="en">
+                        <span>🇬🇧</span> English
+                    </button>
+                    <button type="button" data-language="de">
+                        <span>🇩🇪</span> Deutsch
+                    </button>
+                </div>
+            </div>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero panorama-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Znajdź pracę, która do Ciebie pasuje</h1>
+            <p>Jesteśmy agencją pracy tymczasowej. Łączymy wykwalifikowanych pracowników ze sprawdzonymi pracodawcami w regionie i za granicą.</p>
+            <div class="cta-group">
+                <a href="#oferty" class="btn btn-primary">Sprawdź Oferty</a>
+                <a href="#kontakt" class="btn btn-secondary">Zostaw CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferty" class="job-offers-section">
+        <div class="container">
+            <h2>Aktualne Oferty Pracy</h2>
+            <div class="cards-grid">
+                <div class="job-card">
+                    <span class="job-badge">Nowość</span>
+                    <h3>Pracownik Linii Produkcyjnej</h3>
+                    <p class="company-name">Zakłady Mięsne</p>
+                    <p class="job-desc">Poszukujemy pracowników do obsługi nowoczesnej linii produkcyjnej. Zapewniamy pełne wdrożenie i stabilne warunki zatrudnienia.</p>
+                    <a href="#" class="btn btn-outline">Aplikuj teraz</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>Operator Wózka Widłowego</h3>
+                    <p class="company-name">Centrum Logistyczne</p>
+                    <p class="job-desc">Wymagane uprawnienia UDT. Praca w systemie zmianowym w nowoczesnym magazynie wysokiego składowania.</p>
+                    <a href="#" class="btn btn-outline">Aplikuj teraz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-intro">
+                <span class="section-label">Skontaktuj się z nami</span>
+                <h2>Masz pytania?</h2>
+                <p>Jeśli potrzebujesz dodatkowych informacji, wypełnij formularz. Nasz zespół skontaktuje się z Tobą tak szybko, jak to możliwe.</p>
+            </div>
+            <!-- FORMSPREE link -->
+            <form class="contact-form" action="https://formspree.io/f/TWOJ_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="adres@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Temat wiadomości</label>
+                    <input type="text" id="subject" name="subject" placeholder="W czym możemy pomóc?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Napisz treść swojej wiadomości..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>TWOJA FIRMA SP. Z O.O. 2026</h2>
+            <p>Adres: NaTwojejFirmie 67, TamGdzieTwojaFirma 67-676, Polska</p>
+            <p>KRS: 0000000000 | NIP: 0000000000 | REGON: 000000000</p>
+            <p class="footer-copyright">All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
